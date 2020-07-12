@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" shape="round">
+        <ion-icon slot="start" name="exit-outline"></ion-icon>
+        Logout
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="full-height center">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card button="true" class="ion-padding" routerLink="/report">
+            <ion-card-header>
+              <ion-card-title class="ion-text-center title">Report an Outage</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-card button="true" class="ion-padding" routerLink="/schedules">
+            <ion-card-header>
+              <ion-card-title class="ion-text-center title">Interruptions Schedule</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-card button="true" class="ion-padding center" routerLink="/map">
+            <ion-card-header>
+              <ion-card-title class="ion-text-center title">Status Map</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

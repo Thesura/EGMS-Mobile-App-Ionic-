@@ -1,0 +1,7 @@
+{
+  "name": "EGMS Client App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

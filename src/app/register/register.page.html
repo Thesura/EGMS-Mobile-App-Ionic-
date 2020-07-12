@@ -1,0 +1,71 @@
+<ion-content>
+  <div class="full-height center">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card class="ion-padding">
+            <ion-card-header>
+              <ion-card-title class="ion-text-center"><h1>Login</h1></ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <div>
+                <ion-grid>
+                  <form #form = "ngForm" (ngSubmit) = "submitRegister(form)">
+                  <ion-row>
+                    <ion-col>
+                      <ion-item>
+                        <ion-label position="floating" class="ion-text-center">Username</ion-label>
+                        <ion-input [(ngModel)]="name" type="text" required name="name"></ion-input>
+                      </ion-item>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <ion-col>
+                      <ion-item>
+                        <ion-label position="floating" class="ion-text-center">Email</ion-label>
+                        <ion-input [(ngModel)]="email" name="email" type="email" required></ion-input>
+                      </ion-item>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <ion-col>
+                      <ion-item>
+                        <ion-label position="floating" class="ion-text-center">Password</ion-label>
+                        <ion-input [(ngModel)]="password" name="password" type="password" required></ion-input>
+                      </ion-item>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <ion-col>
+                      <ion-item>
+                        <ion-label position="floating" class="ion-text-center">Address</ion-label>
+                        <ion-textarea [(ngModel)]="address" name="address" auto-grow="true" rows="1" required></ion-textarea>
+                      </ion-item>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <ion-col>
+                      <ion-item>
+                        <ion-label position="floating" class="ion-text-center">Telephone</ion-label>
+                        <ion-input [(ngModel)]="phone" name="phone" type="tel" required></ion-input>
+                      </ion-item>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <ion-col>
+                      <ion-button type="submit" fill="outline" class="center ion-padding ion-margin-vertical">Register</ion-button>
+                    </ion-col>
+                    <ion-col>
+                      <ion-button color="danger" fill="outline" class="center ion-padding">Clear</ion-button>
+                    </ion-col>
+                  </ion-row>
+                </form>
+                </ion-grid>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

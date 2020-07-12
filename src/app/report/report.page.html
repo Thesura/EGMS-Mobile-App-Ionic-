@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/menu" [text]="buttonText"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Report an Outage</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="full-height center">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card class="ion-padding">
+            <ion-card-header>
+              <ion-card-title class="ion-text-center"><h1>Report an Outage</h1></ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <div>
+                <ion-grid>
+                  <form #form = "ngForm" (ngSubmit)="submitReport(form)">
+                  <ion-row>
+                    <ion-col>
+                      <ion-item>
+                        <ion-label position="floating" class="ion-text-center">Additional Information(Optional)</ion-label>
+                        <ion-textarea [(ngModel)]="special_notes" name="special_notes"></ion-textarea>
+                      </ion-item>
+                    </ion-col>
+                    <ion-col class="center">
+                      <ion-item>
+                        <ion-button
+                        type="submit"
+                  expand="block"
+                  shape="round"
+                  color="success"
+                  size="large"
+                  fill="outline"
+                  class="ion-margin-vertical"
+                  >Report</ion-button
+                >
+                      </ion-item>
+                    </ion-col>
+                  </ion-row>
+                </form>
+                </ion-grid>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  
+
+</ion-content>
